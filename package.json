@@ -1,5 +1,5 @@
 {
-  "name": "@allnulled/check-that",
+  "name": "check-that",
   "version": "0.0.1",
   "description": "Simple JavaScript library to make checkings in a semantic-friendly syntax.",
   "main": "check-that.js",
