@@ -1,5 +1,5 @@
 {
-  "name": "check-that",
+  "name": "@allnulled/check-that",
   "version": "0.0.1",
   "description": "Simple JavaScript library to make checkings in a semantic-friendly syntax.",
   "main": "check-that.js",
@@ -10,5 +10,13 @@
   "author": "allnulled",
   "license": "WTFPL",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/check-that.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allnulled/check-that/issues"
+  },
+  "homepage": "https://github.com/allnulled/check-that#readme"
 }
