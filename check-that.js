@@ -38,6 +38,13 @@
             throw new Error("Expected <" + this.targetID + "> to not be undefined [ERROR:" + this.errorID + "]");
         }
 
+        isBoolean() {
+            if (typeof this.target === "boolean") {
+                return this;
+            }
+            throw new Error("Expected <" + this.targetID + "> to be a boolean [ERROR:" + this.errorID + "]");
+        }
+
         isNumber() {
             if (typeof this.target === "number") {
                 return this;

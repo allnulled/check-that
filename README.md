@@ -8,6 +8,7 @@ Simple JavaScript library to make checkings in a semantic-friendly syntax.
 import Check from "@allnulled/check-that";
 
 Check.that("").isString().and.hasLengthLowerThan(1);
+Check.that(true).isBoolean();
 Check.that(5).isNumber();
 Check.that(5).equals(5);
 Check.that(undefined).isUndefined();
@@ -35,6 +36,7 @@ Check.that(5).doesNotThrowOn(v => undefined);
 - The main class' constructor has the following signature:
   - `Check.that(target:any, targetID:String = "?", errorID:String = "xxxxx")`
 - The main class has these methods with these signatures:
+  - `isBoolean()`
   - `isString()`
   - `isNumber()`
   - `equals(value:any, valueID:String = undefined)`
