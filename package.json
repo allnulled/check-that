@@ -1,6 +1,6 @@
 {
   "name": "@allnulled/check-that",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple JavaScript library to make checkings in a semantic-friendly syntax.",
   "main": "check-that.js",
   "scripts": {
