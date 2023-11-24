@@ -24,6 +24,13 @@
             throw new Error("Expected <" + this.targetID + "> to equal <" + (valueID || value) + "> [ERROR:" + this.errorID + "]");
         }
 
+        differs(value, valueID = undefined) {
+            if (this.target !== value) {
+                return this;
+            }
+            throw new Error("Expected <" + this.targetID + "> to differ <" + (valueID || value) + "> [ERROR:" + this.errorID + "]");
+        }
+        
         isUndefined() {
             if (typeof this.target === "undefined") {
                 return this;
@@ -43,6 +50,20 @@
                 return this;
             }
             throw new Error("Expected <" + this.targetID + "> to be a boolean [ERROR:" + this.errorID + "]");
+        }
+
+        isTrue() {
+            if (this.target === true) {
+                return this;
+            }
+            throw new Error("Expected <" + this.targetID + "> to be true [ERROR:" + this.errorID + "]");
+        }
+
+        isFalse() {
+            if (this.target === false) {
+                return this;
+            }
+            throw new Error("Expected <" + this.targetID + "> to be false [ERROR:" + this.errorID + "]");
         }
 
         isNumber() {
